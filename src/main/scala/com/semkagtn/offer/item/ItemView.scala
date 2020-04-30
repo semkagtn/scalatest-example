@@ -22,8 +22,8 @@ object ItemView {
   def asView(model: Item): ItemView = model match {
     case Item.Car(mark, model) =>
       ItemView(
-        mark = Some(model),
-        model = Some(mark)
+        mark = Some(mark),
+        model = Some(model)
       )
     case Item.Flat(rooms, floor) =>
       ItemView(
