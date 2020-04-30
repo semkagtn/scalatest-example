@@ -11,4 +11,6 @@ object Item {
   final case class Flat(rooms: Int,
                         floor: Int)
     extends Item
+  
+  // ... other
 }

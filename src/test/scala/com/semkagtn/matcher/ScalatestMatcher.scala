@@ -18,6 +18,6 @@ trait ScalatestMatcher[-A]
     asString
 
   protected def matches(actualResult: A): Boolean
-  
+
   protected def asString: String
 }

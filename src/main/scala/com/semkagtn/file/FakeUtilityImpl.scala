@@ -10,6 +10,6 @@ class FakeUtilityImpl
   override def getModificationTime(path: Path): Long =
     map.getOrElse(path, -1)
   
-  override def touch(path: Path): Unit =
-    map = map.updated(path, System.currentTimeMillis)
+  override def touch(path: Path): Unit = ()
+//    map = map.updated(path, System.currentTimeMillis)
 }

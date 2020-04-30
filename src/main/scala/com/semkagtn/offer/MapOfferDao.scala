@@ -11,6 +11,9 @@ class MapOfferDao
   override def put(offer: Offer): Unit =
     map = map.updated(offer.id, offer)
 
-  override def delete(id: OfferId): Unit =
-    map = map.removed(id)
+  override def delete(id: OfferId): Boolean = {
+    val result = !map.contains(id)
+//    map = map.removed(id)
+    result
+  }
 }

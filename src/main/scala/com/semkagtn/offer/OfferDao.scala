@@ -17,6 +17,8 @@ trait OfferDao {
 
   /**
    * Deletes an offer with specified id from the storage.
+   * 
+   * @return ''true'' if was deleted, ''false'' else
    */
-  def delete(id: OfferId): Unit
+  def delete(id: OfferId): Boolean
 }
